@@ -1,0 +1,52 @@
+<!-- HTML Doctype선언문 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 인코딩 캐릭터셋 UTF-8지정 -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 부트스트랩 css 참조 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- jquery 참조 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- 부트스트랩 javascript 참조 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Google Font 참조 -->
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet" />
+    <!-- JS 모듈화 참조 -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <!-- CSS 모듈화 참조 -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>인생 버킷리스트</title>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="mypic">
+        <h1>나의 버킷리스트</h1>
+    </div>
+
+    <!-- Content -->
+    <div class="mybox">
+        <div class="mybucket">
+            <input id="bucket" class="form-control" type="text" placeholder="이루고 싶은 것을 입력하세요" />
+            <button onclick="save_bucket()" type="button" class="btn btn-outline-primary">기록하기</button>
+        </div>
+    </div>
+    <div class="mybox" id="bucket-list">
+        <li>
+            <h2>✅ 호주에서 스카이다이빙 하기</h2>
+        </li>
+    </div>
+    
+    <!-- Footer -->
+    <!-- NONE -->
+</body>
+
+</html>
