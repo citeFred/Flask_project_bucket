@@ -19,7 +19,16 @@
 
 ## 📌 주요 기능
 #### View 구성
-- top부분에 웹 페이지 정보 : 타이틀(title)
+* top부분 :<br>
+    - 웹 페이지 정보 타이틀(title)
+* content부분 : <br>
+    1. 버킷리스트 기록 : <br>
+    - div내 input(#bucket)의 입력필드 생성 placeholder로 입력 내용 가이드<br>
+    - 기록하기 버튼 save_bucket() onclick 이벤트 넣어두기<br>
+    2. 버킷 리스트 목록 : <br>
+    - 기록(DB)을 불러와서 기록하기 하단 새로운 div에 1행씩 출력되도록 함<br>
+* footer부분 :<br>
+    - 구성 없음
 
 #### 버킷리스트 기록 진행
 - input박스에 텍스트 입력
