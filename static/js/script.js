@@ -21,7 +21,7 @@ function show_bucket() {
         rows.forEach((a)=>{
             // 리스트에 있는 key의 value들을 각 변수에 담기
             let bucket = a['bucket']
-            console.log("bucket===>"+rows)
+            console.log("bucket===>"+bucket)
 
             // index.html에 위 변수들이 들어가도록 백틱 내 자리표시자${variable} 작성한 내용을 temp_html에 작성
             let temp_html = `<li>
