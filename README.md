@@ -37,3 +37,11 @@
 #### 버킷리스트 목록 확인
 - DB에 저장된 기록된 버킷리스트 데이터 받기(find(==read))
 - 받은 데이터를 footer 부분에 한줄씩 출력
+
+#### NEW RELEASE
+* 2023.08.08 - v1.1 완료 상태 업데이트 기능 추가 및 AWS EB 배포
+   - 저장된 버킷리스트의 '완료' or '미완료' 상태를 구분 할 수 있는 DB내 done컬럼 추가
+   - 상태에 따른 뷰 페이지 상태 추가
+   - 버튼을 통해 '완료' 상태로 전환 또는 잘못 누른 경우를 위한 '복구' 기능 추가
+   - AWS EB를 통한 배포 추가
+   - http://bucketlist.eba-8gmu7v8e.ap-northeast-2.elasticbeanstalk.com/
