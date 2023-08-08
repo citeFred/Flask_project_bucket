@@ -65,3 +65,19 @@
 .mybox>li>h2.done {
     text-decoration: line-through;
 }
+
+
+#fix_status {
+    display:none;
+}
+
+#restore_status:hover #origin_status{
+    display:none;
+}
+#restore_status:hover #fix_status{
+    display:block;
+}
+
+button:hover {
+    transition: 1.0s;
+}
